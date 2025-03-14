@@ -13,15 +13,15 @@ def is_enabled(value, default):
 #---------------------------------------------------------------
 #---------------------------------------------------------------         ,
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '23289038'))
-API_HASH = environ.get('API_HASH', 'd40388e97cf7315f36208533773e2095')
+API_ID = int(environ.get('API_ID', ''))
+API_HASH = environ.get('API_HASH', '')
 BOT_TOKEN = environ.get('BOT_TOKEN', '')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '8147078600 1773034985').split()]
 USERNAME = environ.get('USERNAME', "https://t.me/pArAd0X6") # ADMIN USERNAME
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002436545161'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/moviemasala_pro')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002688929279'))
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
@@ -31,14 +31,14 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_Files')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #----------- There will be channel id add in all these ---------
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002436545161'))  # set shortner log channel
-DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1002436545161')) # The movie you upload in it will be deleted from the bot.
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002436545161'))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002688929279'))  # set shortner log channel
+DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1002688929279')) # The movie you upload in it will be deleted from the bot.
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002688929279'))
 auth_channel = environ.get('AUTH_CHANNEL', '-1002097884361')
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002471519870'))
-request_channel = environ.get('REQUEST_CHANNEL', '-1002471519870') # If anyone sends a request message to your bot, you will get it in this channel.
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002576009404'))
+request_channel = environ.get('REQUEST_CHANNEL', '-1002576009404') # If anyone sends a request message to your bot, you will get it in this channel.
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002251927740')) # 
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/') #Support group link ( make sure bot is admin )
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/moviedekhosupport') #Support group link ( make sure bot is admin )
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 IS_VERIFY = is_enabled('IS_VERIFY', True)
